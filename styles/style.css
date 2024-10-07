@@ -1,0 +1,144 @@
+@font-face {
+    font-family: Inter;
+    src: url('../fonts/inter/Inter-Variable.ttf');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.blured--background {
+    background-image: url('../images/background.jpg');
+    filter: blur(9px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+.main_title {
+    position: absolute;
+    left: 50%;
+    top: 50%;    
+    font-family: Inter;
+    font-size: 104px;
+    font-weight: 600;
+    line-height: 125.86px;
+    text-align: center;
+    transform: translateX(-50%) translateY(-50%);
+}
+.main__left {
+ overflow: visible;
+ padding-left: 20px;
+ padding-top: 20px;
+}
+.main__left--title {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.05px;
+    text-align: left;    
+}
+
+.main__right {
+padding-top: 20px;
+padding-right: 20px;
+}
+.main__right--title {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.05px;
+    text-align: left;    
+}
+.main__right--header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.textTop__container1 {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 18px;
+        text-transform: lowercase;
+        span {
+        font-weight: bold;
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.78px;
+        text-align: left;        
+    }
+}
+.textTop__container2 {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    text-transform: lowercase;  
+}
+.main__right--textBottom {
+    margin-bottom: 20px;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    text-transform: lowercase;   
+    span {
+        font-weight: bold;
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.78px;
+        text-align: left;
+        text-transform: lowercase;     
+    }
+}
+.textmargin {
+    margin-left: 20%;
+    margin-right: auto;
+    text-align: left;
+}
+
+.page__two {
+    display: none;
+}
+button {
+    background: none;
+    border: none;
+}
+button:hover {
+    cursor: pointer;
+}
+.right__content {
+    height: 98%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+/*#svg {
+    stroke-dasharray: 4258;
+    stroke-dashoffset: 4258;
+    animation: sign 1.8s ease;
+    animation-fill-mode: forwards;
+}
+@keyframes sign {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
